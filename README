@@ -5,4 +5,16 @@ So that I can later review them.
 
 So this is a Chrome Extension. Why Chrome??? bcoz I use this browser must of time.
 
+Installation
+1. Either git clone the repos or download it. Store the "hackernotes" folder some where.
+2. in Chrome
+Tools > Extensions
+Click the "Load unpacked extension" and point to the hackernotes folder. 
+done!!
+
+Now when you select a line while reading article. An annoying popup will appear.
+just type what ever you wish in the text area and submit.
+
+Go check the notes in
+http://codesnipr.com/notes
 
