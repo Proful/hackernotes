@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      chrome.extension.onRequest.addListener(function(message, sender, sendResponse){
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://www.codesnipr.com/notes", true);
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState == 4) {
+          }
+        }
+
+        var formData = new FormData();
+        formData.append("note[link]", message.link);
+        formData.append("note[title]",message.title );
+        formData.append("note[quotes_attributes][0][quote]",message.quote);
+        formData.append("note[quotes_attributes][0][mynote]",message.mynote);
+        xhr.send(formData);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

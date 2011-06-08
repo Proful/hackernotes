@@ -1,0 +1,64 @@
+#backgroundPopup{
+  display:none;
+  position:fixed;
+  _position:absolute; /* hack for internet explorer 6*/
+  height:100%;
+  width:100%;
+  top:0;
+  left:0;
+  background:#000000;
+  border:1px solid #cecece;
+  z-index:1;
+}
+#popupContact{
+  display:none;
+  position:fixed;
+  _position:absolute; /* hack for internet explorer 6*/
+  height:250px;
+  width:400px;
+  background:#FFFFFF;
+  border:2px solid #cecece;
+  z-index:2;
+  padding:12px;
+  font-size:13px;
+  color: #222;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.2em;
+  margin: 0px;
+}
+#popupContactClose{
+  font-size:14px;
+  line-height:14px;
+  right:6px;
+  top:4px;
+  position:absolute;
+  color:#6fa5fd;
+  font-weight:700;
+  display:block;
+}
+
+#popupContact #contactArea p#hnshow{
+  margin: 1em 0px;
+  text-align: left;
+  color: #333;
+}
+
+#popupContact #contactArea button#hnsave{
+  background-color: buttonface;
+  border: 2px outset buttonface;
+  cursor: default;
+  padding: 2px 6px 3px;
+  text-align: center;
+}
+
+#popupContact #contactArea textarea#hnnotes{
+  height: auto;
+  width: auto;
+  padding: 2px;
+  margin: 0px;
+  background-color: white;
+  border: 1px solid;
+  cursor: auto;
+  resize: auto;
+  white-space: pre-wrap;
+}

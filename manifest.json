@@ -1,0 +1,17 @@
+{
+  "name":        "Hacker Notes",
+  "version":     "0.1",
+  "description": "Hacker Notes",
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "css": ["style.css"],
+      "js":      ["jquery-1.4.4.min.js","jquery.tmpl.min.js", "popup.js","application.js"]
+    }
+  ],
+  "permissions": [
+    "http://www.codesnipr.com/"
+  ],
+  "background_page": "background.html"
+}
